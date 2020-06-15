@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="124254" started-at="2020-06-14T23:03:30 EDT" finished-at="2020-06-14T23:05:34 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="124254" started-at="2020-06-14T23:03:30 EDT" finished-at="2020-06-14T23:05:34 EDT">
+      <class name="com.gcdp.test.MainTest">
+        <test-method status="PASS" signature="test_shouldCreate_FullScreeningApplication()[pri:0, instance:com.gcdp.test.MainTest@4f063c0a]" name="test_shouldCreate_FullScreeningApplication" duration-ms="79570" started-at="2020-06-14T23:03:30 EDT" finished-at="2020-06-14T23:04:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_shouldCreate_FullScreeningApplication -->
+        <test-method status="PASS" signature="test_shouldCreate_PreScreeningApplication()[pri:0, instance:com.gcdp.test.MainTest@4f063c0a]" name="test_shouldCreate_PreScreeningApplication" duration-ms="44637" started-at="2020-06-14T23:04:49 EDT" finished-at="2020-06-14T23:05:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_shouldCreate_PreScreeningApplication -->
+      </class> <!-- com.gcdp.test.MainTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
