@@ -16,23 +16,23 @@ public class PreScreening extends Base {
 		click("//*[@id=\"guideContainer-rootPanel-home-button_continue___widget\"]/span[2]");
 
 		sleep();
-		click("/html/body/main/div[1]/div/a");
-
+		driver.findElement(By.xpath("//strong[2]")).click();
+		
 		fillPreScreen();
 			
 	}
 
 	public void fillPreScreen() {
 
-	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-name___widget")).sendKeys("RT_June14-PREScreening_01");
+	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-name___widget")).sendKeys("RT Auto_JAN 08-PreScreen_0801");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-projectDescription___widget")).sendKeys("Project Description field");
-	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1Line1___widget")).sendKeys("123 First Stree");
+	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1Line1___widget")).sendKeys("123 Main Street");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1City___widget")).sendKeys("Toronto");
 	    new Select(driver.findElement(By.id("guideContainer-rootPanel-prescreen-address1ProvinceId___widget"))).selectByVisibleText("Ontario");
 	    new Select(driver.findElement(By.id("guideContainer-rootPanel-prescreen-address1CountryId___widget"))).selectByVisibleText("Canada");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-address1PostalCode___widget")).sendKeys("M1M1M1");
-	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-estimatedStartDate___widget")).sendKeys("04/01/2020");
-	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-estimatedEndDate___widget")).sendKeys("12/31/2020");
+	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-estimatedStartDate___widget")).sendKeys("2020-12-01");
+	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-estimatedEndDate___widget")).sendKeys("2020-12-31");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psRequestedAAFCFunding___widget")).sendKeys("1200");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-totalValueOfTheProject___widget")).sendKeys("120000");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-projectObjective___widget")).sendKeys("project Activities for funding");
@@ -44,9 +44,14 @@ public class PreScreening extends Base {
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-FundingSource-other_amount___widget")).sendKeys("1200");
 	    new Select(driver.findElement(By.id("guideContainer-rootPanel-prescreen-naicsCodeParentId___widget"))).selectByVisibleText("Agricultural Production");
 	    new Select(driver.findElement(By.id("guideContainer-rootPanel-prescreen-naicsCodeId___widget"))).selectByVisibleText("111211: Potato Farming");
-
-	    driver.findElement(By.xpath("//button[@id='guideContainer-rootPanel-prescreen-submit_1344868758___widget']/span[2]")).click();
-	    		
-	    System.out.println("Thank you for your submission! PreScreening Project is created");
+	    
+	    driver.findElement(By.xpath("//button[@id='guideContainer-rootPanel-prescreen-submit_new___widget']/span[2]")).click();
+	   
+	    sleep();
+	    driver.findElement(By.linkText("Continue")).click();
+        
+	    System.out.println("================================");
+	    System.out.println("NEW PreScreening Project Created");
+	    System.out.println("================================");
 	}
 }

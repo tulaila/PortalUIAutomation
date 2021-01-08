@@ -9,17 +9,18 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Base {
 	public WebDriver driver = null;
-	public String url = "http://svr100c001t012.agr.gc.ca:4503/content/aafc-gcdp/applicationList.html";
-	public String username = "ram";
+	//public String url = "http://svr100c001t012.agr.gc.ca:4503/content/aafc-gcdp/applicationList.html";
+	public String url = "http://svr100c001t012.agr.gc.ca:4503/content/aafc-gcdp/en/signin.html";
+	public String username = "test";
 	public String password = "canada";
 
 	{
 
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\tutailat\\Downloads\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\tulailar\\Downloads\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 
-//		System.setProperty("webdriver.gecko.driver", "C:\\Users\\tutailat\\Downloads\\Drivers\\geckodriver.exe");
-//		driver = new FirefoxDriver();
+ 	/*	System.setProperty("webdriver.gecko.driver", "C:\\Users\\tulailar\\Downloads\\Drivers\\geckodriver.exe");
+ 		driver = new FirefoxDriver(); */
 
 	}
 	
@@ -38,10 +39,10 @@ public class Base {
 
 	public void login() {
 		driver.navigate().to(this.url);
-		WebElement e = findByLink("Login");
-		e.click();
+	/*	WebElement e = findByLink("Login");
+		e.click(); */
 
-		e = findElement("//*[@id=\"guideContainer-rootPanel-contact-userName___widget\"]");
+		WebElement e = findElement("//*[@id=\"guideContainer-rootPanel-contact-userName___widget\"]");
 		e.sendKeys(username);
 
 		e = findElement("//*[@id=\"guideContainer-rootPanel-contact-password___widget\"]");
