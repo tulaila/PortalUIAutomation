@@ -24,7 +24,7 @@ public class PreScreening extends Base {
 
 	public void fillPreScreen() {
 
-	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-name___widget")).sendKeys("RT Auto_JAN 08-PreScreen_0801");
+	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-name___widget")).sendKeys("RT_JAN 08-PreScreen_AT01");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-projectDescription___widget")).sendKeys("Project Description field");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1Line1___widget")).sendKeys("123 Main Street");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1City___widget")).sendKeys("Toronto");

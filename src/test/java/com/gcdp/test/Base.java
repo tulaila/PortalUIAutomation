@@ -9,17 +9,20 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Base {
 	public WebDriver driver = null;
-	//public String url = "http://svr100c001t012.agr.gc.ca:4503/content/aafc-gcdp/applicationList.html";
-	public String url = "http://svr100c001t012.agr.gc.ca:4503/content/aafc-gcdp/en/signin.html";
-	public String username = "test";
+	
+	
+	//public String url = "http://svr100c001t012.agr.gc.ca:4503/content/aafc-gcdp/en/signin.html";  //QA URL
+	public String url = "http://svr100c001u02.agr.gc.ca:4503/content/aafc-gcdp/en/signin.html"; //UAT URL
+	
+	public String username = "kumar";
 	public String password = "canada";
 
 	{
 
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\tulailar\\Downloads\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 
- 	/*	System.setProperty("webdriver.gecko.driver", "C:\\Users\\tulailar\\Downloads\\Drivers\\geckodriver.exe");
+ 	/*	System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
  		driver = new FirefoxDriver(); */
 
 	}

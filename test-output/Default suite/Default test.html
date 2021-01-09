@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 08 09:55:46 EST 2021</td>
+<td>Started on:</td><td>Fri Jan 08 16:57:33 EST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (28 ms)</td>
+<tr><td>Total time:</td><td>119 seconds (119202 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,41 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.gcdp.test.MainTest.test_shouldCreate_PreScreeningApplication()'><b>test_shouldCreate_PreScreeningApplication</b><br>Test class: com.gcdp.test.MainTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Base cannot be resolved to a type
-	The method login() is undefined for the type PreScreening
-	The method sleep() is undefined for the type PreScreening
-	The method selectFromDropdown(String, String) is undefined for the type PreScreening
-	The method selectFromDropdown(String, String) is undefined for the type PreScreening
-	The method click(String) is undefined for the type PreScreening
-	The method sleep() is undefined for the type PreScreening
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	The method sleep() is undefined for the type PreScreening
-	driver cannot be resolved
-
-	at com.gcdp.test.PreScreening.&lt;init&gt;(PreScreening.java:6)
-	at com.gcdp.test.MainTest.test_shouldCreate_PreScreeningApplication(MainTest.java:18)
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at com.gcdp.test.Base.selectFromDropdown(Base.java:73)
+	at com.gcdp.test.PreScreening.chooseProgram(PreScreening.java:14)
+	at com.gcdp.test.MainTest.test_shouldCreate_PreScreeningApplication(MainTest.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -139,42 +109,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace671471369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace671471369'><pre>java.lang.Error: Unresolved compilation problems: 
-	Base cannot be resolved to a type
-	The method login() is undefined for the type PreScreening
-	The method sleep() is undefined for the type PreScreening
-	The method selectFromDropdown(String, String) is undefined for the type PreScreening
-	The method selectFromDropdown(String, String) is undefined for the type PreScreening
-	The method click(String) is undefined for the type PreScreening
-	The method sleep() is undefined for the type PreScreening
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-	The method sleep() is undefined for the type PreScreening
-	driver cannot be resolved
-
-	at com.gcdp.test.PreScreening.&lt;init&gt;(PreScreening.java:6)
-	at com.gcdp.test.MainTest.test_shouldCreate_PreScreeningApplication(MainTest.java:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1911978617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911978617'><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at com.gcdp.test.Base.selectFromDropdown(Base.java:73)
+	at com.gcdp.test.PreScreening.chooseProgram(PreScreening.java:14)
+	at com.gcdp.test.MainTest.test_shouldCreate_PreScreeningApplication(MainTest.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -204,8 +144,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.gcdp.test.MainTest@343570b7</td></tr>
+<td>18</td>
+<td>com.gcdp.test.MainTest@3c947bc5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.gcdp.test.MainTest.test_shouldCreate_FullScreeningApplication()'><b>test_shouldCreate_FullScreeningApplication</b><br>Test class: com.gcdp.test.MainTest</td>
+<td></td>
+<td>101</td>
+<td>com.gcdp.test.MainTest@3c947bc5</td></tr>
 </table><p>
 </body>
 </html>

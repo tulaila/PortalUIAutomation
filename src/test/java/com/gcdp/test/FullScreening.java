@@ -25,7 +25,7 @@ public class FullScreening extends Base {
 
 	public void fillFullScreen() {
 
-		driver.findElement(By.id("guideContainer-rootPanel-project-name___widget")).sendKeys("RT Auto_JAN 08-Screening_0801");
+		driver.findElement(By.id("guideContainer-rootPanel-project-name___widget")).sendKeys("RT_JAN 08-Screening_AT02");
 		driver.findElement(By.id("guideContainer-rootPanel-project-projectDescription___widget")).sendKeys("Project Description");
 		driver.findElement(By.id("guideContainer-rootPanel-project-projectObjective___widget")).sendKeys("Project objective");
 		driver.findElement(By.xpath("//button[@id='guideContainer-rootPanel-project-useOrgAddress___widget']/span[2]")).click();
